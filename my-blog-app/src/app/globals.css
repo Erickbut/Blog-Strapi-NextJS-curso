@@ -25,3 +25,58 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+/* Estilos generales */
+
+/* Estilos para pantallas de tamaño pequeño (celulares) */
+@media (max-width: 640px) {
+  /* Agrega tus estilos específicos para pantallas pequeñas aquí */
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para pantallas de tamaño mediano (tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Agrega tus estilos específicos para pantallas medianas aquí */
+  body {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .grid-cols-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Estilos para pantallas de tamaño grande (PCs) */
+@media (min-width: 1025px) {
+  /* Agrega tus estilos específicos para pantallas grandes aquí */
+  body {
+    font-size: 18px;
+    padding: 30px;
+  }
+
+  .grid-cols-1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Estilos para pantallas de tamaño extra grande (TVs) */
+@media (min-width: 1920px) {
+  /* Agrega tus estilos específicos para pantallas extra grandes aquí */
+  body {
+    font-size: 20px;
+    padding: 40px;
+  }
+
+  .grid-cols-1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
